@@ -242,7 +242,6 @@ footer h3 {
 	display: flex;
 	flex-direction: row;
 	align-items: stretch;
-	width: 100%;
 	margin: 16px 1rem;
 }
 .img-watch-today {
@@ -281,7 +280,6 @@ footer h3 {
 
 .download-block {
 	margin: 16px 1rem;
-	width: 100%;
 	height: auto;
 }
 .download-block > img {
@@ -364,6 +362,43 @@ footer h3 {
 .download-score h3 {
 	font-weight: 900;
 	font-size: 2rem;
+}
+
+#gallery h1 {
+	font-weight: 900;
+	font-size: 2rem;
+	padding: 1.5rem 0;
+	margin: auto;
+	text-align: center;
+}
+.movie-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2rem;
+}
+.movie-gallery:nth-child(4n + 1) {
+	flex-basis: 250px;
+}
+.movie-gallery:nth-child(4n + 2) {
+	flex-basis: 325px;
+}
+.movie-gallery:nth-child(4n + 3) {
+	flex-basis: 180px;
+}
+.movie-gallery:nth-child(4n + 4) {
+	flex-basis: 380px;
+}
+
+.gallery-img {
+	height: 250px;
+	flex-grow: 1;
+	margin: 0 0 8px 8px;
+}
+.gallery-img img {
+	height: 100%;
+	width: 100%;
+	display: block;
+	object-fit: cover;
 }
 @media screen and (max-width: 1024px) and (min-width: 810px) {
 	/* Main Flex */
@@ -450,12 +485,15 @@ footer h3 {
 		height: auto;
 	}
 	.download-row .download-button,
-	.download-row .download-description,
 	.download-row .download-score {
 		flex: 1 1 100%;
 		flex-basis: 7rem;
-		height: 2rem;
 	}
+	.download-row .download-description {
+		flex: 1 1 100%;
+		flex-basis: 10rem;
+	}
+
 	.download-block {
 		margin: 1rem auto;
 		width: 90%;
