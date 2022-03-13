@@ -16,7 +16,7 @@
 		/>
 
 		<link rel="stylesheet" href="styles/styles.css" />
-		<title>Document</title>
+		<title>Filmento</title>
 	</head>
 	<body>
 		<section id="menu">
@@ -222,35 +222,95 @@
 						<h1>Movie Gallery</h1>
 						<div class="movie-gallery">
 							<div class="gallery-img">
-								<img src="pictures/gallery-pic/pic-1.jpg" alt="pic-1" />
+								<img
+									class="inner-img"
+									src="pictures/gallery-pic/pic-1.jpg"
+									id="pic-1"
+									alt="pic-1"
+								/>
 							</div>
 							<div class="gallery-img">
-								<img src="pictures/gallery-pic/pic-2.jpg" alt="pic-2" />
+								<img
+									class="inner-img"
+									src="pictures/gallery-pic/pic-2.jpg"
+									id="pic-2"
+									alt="pic-2"
+								/>
 							</div>
 							<div class="gallery-img">
-								<img src="pictures/gallery-pic/pic-3.jpg" alt="pic-3" />
+								<img
+									class="inner-img"
+									src="pictures/gallery-pic/pic-3.jpg"
+									id="pic-3"
+									alt="pic-3"
+								/>
 							</div>
 							<div class="gallery-img">
-								<img src="pictures/gallery-pic/pic-4.jpg" alt="pic-4" />
+								<img
+									class="inner-img"
+									src="pictures/gallery-pic/pic-4.jpg"
+									id="pic-4"
+									alt="pic-4"
+								/>
 							</div>
 							<div class="gallery-img">
-								<img src="pictures/gallery-pic/pic-5.jpg" alt="pic-5" />
+								<img
+									class="inner-img"
+									src="pictures/gallery-pic/pic-5.jpg"
+									id="pic-5"
+									alt="pic-5"
+								/>
 							</div>
 							<div class="gallery-img">
-								<img src="pictures/gallery-pic/pic-6.jpg" alt="pic-6" />
+								<img
+									class="inner-img"
+									src="pictures/gallery-pic/pic-6.jpg"
+									id="pic-6"
+									alt="pic-6"
+								/>
 							</div>
 							<div class="gallery-img">
-								<img src="pictures/gallery-pic/pic-7.jpg" alt="pic-7" />
+								<img
+									class="inner-img"
+									src="pictures/gallery-pic/pic-7.jpg"
+									id="pic-7"
+									alt="pic-7"
+								/>
 							</div>
 							<div class="gallery-img">
-								<img src="pictures/gallery-pic/pic-8.jpg" alt="pic-8" />
+								<img
+									class="inner-img"
+									src="pictures/gallery-pic/pic-8.jpg"
+									id="pic-8"
+									alt="pic-8"
+								/>
 							</div>
 							<div class="gallery-img">
-								<img src="pictures/gallery-pic/pic-9.jpg" alt="pic-9" />
+								<img
+									class="inner-img"
+									src="pictures/gallery-pic/pic-9.jpg"
+									id="pic-9"
+									alt="pic-9"
+								/>
 							</div>
 							<div class="gallery-img">
-								<img src="pictures/gallery-pic/pic-10.jpg" alt="pic-10" />
+								<img
+									class="inner-img"
+									src="pictures/gallery-pic/pic-10.jpg"
+									id="pic-10"
+									alt="pic-10"
+								/>
 							</div>
+						</div>
+						<div id="myModal" class="modal">
+							<!-- The Close Button -->
+							<span class="close">&times;</span>
+
+							<!-- Modal Content (The Image) -->
+							<img class="modal-content" id="modal-img" />
+
+							<!-- Modal Caption (Image Text) -->
+							<div id="caption"></div>
 						</div>
 					</section>
 				</div>
@@ -282,6 +342,7 @@
 				</div>
 			</div>
 		</section>
+		<script src="app.js"></script>
 	</body>
 	<footer><h3>Copyright LinhKa 2022</h3></footer>
 </html>

@@ -181,14 +181,16 @@ footer h3 {
 	height: 30rem;
 	background-color: rgb(243, 188, 35);
 	display: block;
-	object-fit: fill;
+	object-fit: cover;
+	object-position: 0 0;
 }
 .two-feature-item img {
 	width: 100%;
 	height: 20rem;
 	background-color: rgb(243, 188, 35);
 	display: block;
-	object-fit: fill;
+	object-fit: cover;
+	object-position: 0 0;
 }
 
 .three-feature-item img {
@@ -196,7 +198,8 @@ footer h3 {
 	height: 15rem;
 	background-color: rgb(243, 188, 35);
 	display: block;
-	object-fit: fill;
+	object-fit: cover;
+	object-position: 0 0;
 }
 
 .one-feature-item .feature-description,
@@ -393,12 +396,70 @@ footer h3 {
 	height: 250px;
 	flex-grow: 1;
 	margin: 0 0 8px 8px;
+	transition: 0.5s;
 }
 .gallery-img img {
 	height: 100%;
 	width: 100%;
 	display: block;
 	object-fit: cover;
+	object-position: 50% 0;
+}
+.gallery-img:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+/* Modal Thing */
+
+/* background */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 4rem; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+/* Modal Content (Image) */
+.modal-content {
+	margin: auto;
+	display: block;
+	max-height: 80vh;
+	max-width: 80vw;
+}
+
+.modal-content {
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* The Close Button */
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+.close:hover {
+	cursor: pointer;
 }
 @media screen and (max-width: 1024px) and (min-width: 810px) {
 	/* Main Flex */
@@ -497,6 +558,11 @@ footer h3 {
 	.download-block {
 		margin: 1rem auto;
 		width: 90%;
+	}
+
+	.modal-content {
+		max-height: 95vh;
+		max-width: 95vw;
 	}
 }
 
